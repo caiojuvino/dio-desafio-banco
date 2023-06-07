@@ -5,8 +5,7 @@ public class ContaPoupanca extends Conta {
     }
 
     @Override
-    public void imprimirExtrato() {
-        System.out.println("=== Extrato Conta Poupança ===");
-        super.imprimirInfosComuns();
+    public String toString() {
+        return "- Extrato Conta Poupança -\n" + super.toString();
     }
 }
